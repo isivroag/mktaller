@@ -1,0 +1,552 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0D27438-D56C-487B-973F-7FE568A6356F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SISTALLER.My.MyApplication</StartupObject>
+    <RootNamespace>SISTALLER</RootNamespace>
+    <AssemblyName>SISTALLER</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\IVAN\Desktop\SISTALLER\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SISTALLER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SISTALLER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A1667AC21177AD8BE5F71486B934418F06876B5D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SISTALLER_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conexion.vb" />
+    <Compile Include="C_Auxorden.vb" />
+    <Compile Include="C_Clase.vb" />
+    <Compile Include="C_Cliente.vb" />
+    <Compile Include="C_Detalleorden.vb" />
+    <Compile Include="C_Item.vb" />
+    <Compile Include="C_Linea.vb" />
+    <Compile Include="C_Marca.vb" />
+    <Compile Include="C_Motor.vb" />
+    <Compile Include="C_Movimiento.vb" />
+    <Compile Include="C_Orden.vb" />
+    <Compile Include="C_Subclase.vb" />
+    <Compile Include="C_Submarca.vb" />
+    <Compile Include="C_Tipo_Veh.vb" />
+    <Compile Include="C_Umed.vb" />
+    <Compile Include="C_Vehiculo.vb" />
+    <Compile Include="ExtendedMethods.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmauxinventario.Designer.vb">
+      <DependentUpon>frmauxinventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmauxinventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmclase.Designer.vb">
+      <DependentUpon>frmclase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmclase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcliente.Designer.vb">
+      <DependentUpon>frmcliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultaclase.Designer.vb">
+      <DependentUpon>frmconsultaclase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultaclase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultacliente.Designer.vb">
+      <DependentUpon>frmconsultacliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultacliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultainventario.Designer.vb">
+      <DependentUpon>frmconsultainventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultainventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultaitem.Designer.vb">
+      <DependentUpon>frmconsultaitem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultaitem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultalinea.Designer.vb">
+      <DependentUpon>frmconsultalinea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultalinea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultamarca.Designer.vb">
+      <DependentUpon>frmconsultamarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultamarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultamotor.Designer.vb">
+      <DependentUpon>frmconsultamotor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultamotor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultaorden.Designer.vb">
+      <DependentUpon>frmconsultaorden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultaorden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultasubclase.Designer.vb">
+      <DependentUpon>frmconsultasubclase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultasubclase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultasubmarca.Designer.vb">
+      <DependentUpon>frmconsultasubmarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultasubmarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultatipoveh.Designer.vb">
+      <DependentUpon>frmconsultatipoveh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultatipoveh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultaumed.Designer.vb">
+      <DependentUpon>frmconsultaumed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultaumed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmconsultavehiculo.Designer.vb">
+      <DependentUpon>frmconsultavehiculo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmconsultavehiculo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdetalleord.Designer.vb">
+      <DependentUpon>frmdetalleord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmdetalleord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminventario.Designer.vb">
+      <DependentUpon>frminventario.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frminventario.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmitems.Designer.vb">
+      <DependentUpon>frmitems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmitems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlinea.Designer.vb">
+      <DependentUpon>frmlinea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlinea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmarca.Designer.vb">
+      <DependentUpon>frmmarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmotor.Designer.vb">
+      <DependentUpon>frmmotor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmmotor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmordenser.Designer.vb">
+      <DependentUpon>frmordenser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmordenser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprincipal.Designer.vb">
+      <DependentUpon>frmprincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmprincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsubclase.Designer.vb">
+      <DependentUpon>frmsubclase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsubclase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsubmarca.Designer.vb">
+      <DependentUpon>frmsubmarca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsubmarca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtipoveh.Designer.vb">
+      <DependentUpon>frmtipoveh.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmtipoveh.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmumed.Designer.vb">
+      <DependentUpon>frmumed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmumed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmvehiculo.Designer.vb">
+      <DependentUpon>frmvehiculo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmvehiculo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="mysqlconn.vb" />
+    <Compile Include="principal.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmauxinventario.resx">
+      <DependentUpon>frmauxinventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmclase.resx">
+      <DependentUpon>frmclase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcliente.resx">
+      <DependentUpon>frmcliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultaclase.resx">
+      <DependentUpon>frmconsultaclase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultacliente.resx">
+      <DependentUpon>frmconsultacliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultainventario.resx">
+      <DependentUpon>frmconsultainventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultaitem.resx">
+      <DependentUpon>frmconsultaitem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultalinea.resx">
+      <DependentUpon>frmconsultalinea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultamarca.resx">
+      <DependentUpon>frmconsultamarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultamotor.resx">
+      <DependentUpon>frmconsultamotor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultaorden.resx">
+      <DependentUpon>frmconsultaorden.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultasubclase.resx">
+      <DependentUpon>frmconsultasubclase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultasubmarca.resx">
+      <DependentUpon>frmconsultasubmarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultatipoveh.resx">
+      <DependentUpon>frmconsultatipoveh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultaumed.resx">
+      <DependentUpon>frmconsultaumed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmconsultavehiculo.resx">
+      <DependentUpon>frmconsultavehiculo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdetalleord.resx">
+      <DependentUpon>frmdetalleord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminventario.resx">
+      <DependentUpon>frminventario.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmitems.resx">
+      <DependentUpon>frmitems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlinea.resx">
+      <DependentUpon>frmlinea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmarca.resx">
+      <DependentUpon>frmmarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmotor.resx">
+      <DependentUpon>frmmotor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmordenser.resx">
+      <DependentUpon>frmordenser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmprincipal.resx">
+      <DependentUpon>frmprincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsubclase.resx">
+      <DependentUpon>frmsubclase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsubmarca.resx">
+      <DependentUpon>frmsubmarca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtipoveh.resx">
+      <DependentUpon>frmtipoveh.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmumed.resx">
+      <DependentUpon>frmumed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmvehiculo.resx">
+      <DependentUpon>frmvehiculo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="SISTALLER_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\88-iconos-varios\iconos\users.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\stop-error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\88-iconos-varios\iconos\salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\88-iconos-varios\iconos\new.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\88-iconos-varios\iconos\edit.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\88-iconos-varios\iconos\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\car-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\88-iconos-varios\iconos\search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\PIEZAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\PIEZAS55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agre1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\pieza32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\pieza3-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\BVEHI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\BCLIE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\orden.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\88-iconos-varios\iconos\remove.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\88-iconos-varios\iconos\insert.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\Gasolina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\limpiar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\Icono-Servicios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\SERV.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="recursos\fondo.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
